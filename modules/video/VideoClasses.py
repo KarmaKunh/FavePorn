@@ -144,9 +144,9 @@ class Video:
             thumb= getVideoThumb( update.effective_chat.id, self.video_thumb)
             print(self.video_prev)
         
-            temp= context.bot.send_photo(chat_id=update.effective_chat.id, photo=self.video_prev, caption= self.video_title, reply_markup= markup)
+            temp= context.bot.send_photo(chat_id=update.effective_chat.id, photo=thumb, caption= self.video_title, reply_markup= markup)
 
-            os.remove( thumb)
+            #s.remove( thumb)
             
             thread= threading.Thread( target=self.videoThread, args=[ temp, markup, update, context])
             thread.start()
@@ -161,9 +161,9 @@ class Video:
 
         
 
-        f = open( "users_files/"+ str( update.effective_chat.id)+".txt", "a")
-        f.write( str( temp.message_id)+ " "+ self.video_page+"\n")
-        f.close()
+        #f = open( "users_files/"+ str( update.effective_chat.id)+".txt", "a")
+        #f.write( str( temp.message_id)+ " "+ self.video_page+"\n")
+        #f.close()
 
 
     def videoThread( self, temp, markup, update, context):
