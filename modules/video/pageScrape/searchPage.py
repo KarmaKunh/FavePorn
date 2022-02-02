@@ -205,7 +205,8 @@ def getCategoryPic( name):
 
     thumbs= re.findall(r'data-poster="(.*)" >', page)
         
-    print("Thuuumbs"+thumbs)
+    print("Thuuumbs")
+    print(thumbs)
 
     return thumbs[ randint(0, 6)]
 
