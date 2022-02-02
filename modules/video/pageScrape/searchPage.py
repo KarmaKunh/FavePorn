@@ -100,7 +100,7 @@ def getVideo( url):
         video_link= []
         video_link_def= ""
 
-        print(result);
+        #print(result);
     
         if( page!= "[]"):
             #print("\n"+result[ 1])
@@ -135,21 +135,21 @@ def getVideo( url):
     
 
 def getVideoThumb( chat_id, url):
-    page= get_pics_url( url)
+    #page= get_pics_url( url)
     #print( page)
     print( url)
     
-    url= url.replace( "/", "")
-    url= url.replace( "https:", "")
-    url= url.replace( ".", "")
+    newUrl= url.replace( "/", "")
+    newUrl= url.replace( "https:", "")
+    newUrl= url.replace( ".", "")
 
-    path= "users_files/"+str( chat_id)+"_"+url
-    f = open( path, "wb")
-    f.write( page)
+    #path= "users_files/"+str( chat_id)+"_"+url
+    #f = open( path, "wb")
+    #f.write( page)
 
-    f.close()
+    #f.close()
 
-    return path
+    return newUrl
     
 
 def getCategories():
@@ -230,7 +230,7 @@ def get_url_desktop( url):
 
         }
     r = requests.get(url)
-    print( "result="+r.text)
+    #print( "result="+r.text)
     return r.text
 
 
@@ -253,7 +253,7 @@ def get_pics_url( url):
 
         }
     r = requests.get(url, headers=headers)
-    print( "result="+r.text)
+    #print( "result="+r.text)
     return r.text
     
 
@@ -305,7 +305,7 @@ def get_url( url):
         #print( content)
         r = requests.get(url, headers=headers)
 
-        print( "result="+r.text)
+        #print( "result="+r.text)
 
         return r.text
     
