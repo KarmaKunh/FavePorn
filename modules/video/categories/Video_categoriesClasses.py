@@ -95,4 +95,4 @@ class Category:
 
             ])
             
-            temp= context.bot.send_photo(chat_id=update.effective_chat.id, photo=self.thumb, reply_markup= markup)
+            temp= context.bot.send_photo(chat_id=update.effective_chat.id, photo=thumb, reply_markup= markup)
