@@ -16,7 +16,7 @@ def echo( update, context):
         thread= threading.Thread( target= echo_thread, args=[ update, context])
         thread.start()
     else:
-        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null_Keyboard)
+        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null)
 
 
 def echo_thread(update, context):
@@ -115,7 +115,7 @@ def vid( update, context):
         thread= threading.Thread( target= vid_thread, args=[ update, context])
         thread.start()
     else:
-        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null_Keyboard)
+        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null)
 
 def vid_thread(update, context):
 
@@ -175,7 +175,7 @@ def next( update, context):
                 Server.video_sent= Server.video_sent+1
                 time.sleep(0.6)
             else:
-                context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null_Keyboard)
+                context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null)
 
         else:
             if( Server.isTesting):
@@ -186,7 +186,7 @@ def next( update, context):
                 context.bot.send_message(chat_id=update.effective_chat.id, text= "U are on BlackList bro! Fuck u motherfucker [ You have been banned ]", reply_markup= markup_video_menu)
 
     else:
-        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null_Keyboard)
+        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null)
 
 
 
@@ -254,7 +254,7 @@ def help(update, context):
                 context.bot.send_message(chat_id=update.effective_chat.id, text= "U are on BlackList bro! Fuck u motherfucker [ You have been banned ]", reply_markup= markup_video_menu)
     
     else:
-        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null_Keyboard)
+        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null)
     
 
 
@@ -274,12 +274,12 @@ def categories( update, context):
 
         nextCategories= ( Server.sessions[ update.effective_chat.id].get_categories()).nextCategory( update, context)
     else:
-        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null_Keyboard)
+        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null)
 
 
 def nextCategories( update, context):
 
-    if update.effective_chat.id in Server.sessions: 
+    if update.effective_chat.id in Server.sessions:
         users= Users()
         username= Server.sessions[ update.effective_chat.id].get_username()
         
@@ -306,7 +306,7 @@ def nextCategories( update, context):
                 context.bot.send_message(chat_id=update.effective_chat.id, text= "U are on BlackList bro! Fuck u motherfucker [ You have been banned ]", reply_markup= markup_video_menu)
     
     else:
-        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null_Keyboard)
+        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null)
 
 def showCategory( update, context):
     if update.effective_chat.id in Server.sessions: 
@@ -320,7 +320,7 @@ def showCategory( update, context):
 
         vid_not_command( update, context, ( Server.sessions[ update.effective_chat.id].get_categories()).getSelectedCategory( update, context), "user_input")
     else:
-        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null_Keyboard)
+        context.bot.send_message(chat_id=update.effective_chat.id, text= "Session expired, click here to restart --> /start <--", reply_markup= markup_null)
 
 
 
