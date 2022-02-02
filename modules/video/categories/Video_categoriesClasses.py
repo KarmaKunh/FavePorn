@@ -80,6 +80,8 @@ class Category:
                 [ InlineKeyboardButton( text=self.cat_title, callback_data= "/showCategoryVideo")]
 
             ])
+            
+            print("Thumb fin:"+self.cat_thumb)
 
             temp= context.bot.send_photo(chat_id=update.effective_chat.id, photo=self.cat_thumb, reply_markup= markup)
             
