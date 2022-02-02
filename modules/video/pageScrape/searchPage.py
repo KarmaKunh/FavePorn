@@ -143,7 +143,7 @@ def getVideoThumb( chat_id, url):
     #newUrl= url.replace( "https:", "")
     #newUrl= url.replace( ".", "")
     
-    newUrl= re.findall(r'(.*)" onclick', newUrl)[0]
+    newUrl= re.findall(r'(.*)" onclick', url)[0]
     #path= "users_files/"+str( chat_id)+"_"+url
     #f = open( path, "wb")
     #f.write( page)
