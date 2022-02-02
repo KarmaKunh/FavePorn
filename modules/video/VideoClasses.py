@@ -143,7 +143,7 @@ class Video:
 
             thumb= getVideoThumb( update.effective_chat.id, self.video_thumb)
         
-            temp= context.bot.send_photo(chat_id=update.effective_chat.id, photo= open( thumb, 'rb'), caption= self.video_title, reply_markup= markup)
+            temp= context.bot.send_photo(chat_id=update.effective_chat.id, thumb, caption= self.video_title, reply_markup= markup)
 
             os.remove( thumb)
             
