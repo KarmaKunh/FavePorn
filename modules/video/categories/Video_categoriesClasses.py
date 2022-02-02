@@ -1,7 +1,8 @@
 from modules.video.pageScrape.searchPage import getCategories, getCategoryPic
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton, InputMediaVideo
 import threading
-import time         
+import time
+import re
 
 class Categories:
 
@@ -75,6 +76,8 @@ class Category:
 
     def sendCategory( self, update, context):
         
+        thumb= re.findall(r'(.*)" onclick=', self.cat_thumb)
+        
         if( not self.isNext):
             markup= InlineKeyboardMarkup([
                 [ InlineKeyboardButton( text=self.cat_title, callback_data= "/showCategoryVideo")]
@@ -83,7 +86,7 @@ class Category:
             
             print("Thumb fin:"+self.cat_thumb)
 
-            temp= context.bot.send_photo(chat_id=update.effective_chat.id, photo=self.cat_thumb, reply_markup= markup)
+            temp= context.bot.send_photo(chat_id=update.effective_chat.id, photo=thumb, reply_markup= markup)
             
         else:
             markup= InlineKeyboardMarkup([
@@ -92,4 +95,4 @@ class Category:
 
             ])
             
-            temp= context.bot.send_photo(chat_id=update.effective_chat.id, photo=self.cat_thumb, reply_markup= markup)
+            temp= context.bot.send_photo(chat_id=update.effective_chat.id, photo=self.thumb, reply_markup= markup)
