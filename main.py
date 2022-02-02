@@ -4,7 +4,7 @@ from telegram.ext import MessageHandler, Filters
 import modules.Server as Server
 from modules.Session import Session
 import modules.video.video_actions as video_actions
-import modules.pics.pics_actions as pics_actions
+#import modules.pics.pics_actions as pics_actions
 import datetime
 
 
