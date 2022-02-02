@@ -150,6 +150,8 @@ def getVideoThumb( chat_id, url):
     #f.write( page)
 
     #f.close()
+    
+    print("url fotoo: "+newUrl)
 
     return newUrl
     
