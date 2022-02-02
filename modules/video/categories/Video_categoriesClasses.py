@@ -76,7 +76,7 @@ class Category:
 
     def sendCategory( self, update, context):
         
-        thumb= re.findall(r'(.*)" onclick=', self.cat_thumb)
+        thumb= re.findall(r'(.*)" onclick=', self.cat_thumb)[0]
         
         if( not self.isNext):
             markup= InlineKeyboardMarkup([
@@ -84,7 +84,7 @@ class Category:
 
             ])
             
-            print("Thumb fin:"+self.cat_thumb)
+            print("Thumb fin:"+thumb)
 
             temp= context.bot.send_photo(chat_id=update.effective_chat.id, photo=thumb, reply_markup= markup)
             
