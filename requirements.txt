@@ -9,4 +9,4 @@ tornado==6.1
 tzdata==2021.5
 tzlocal==4.1
 urllib3==1.26.8
-python-telegram-bot
+python-telegram-bot==2.7
