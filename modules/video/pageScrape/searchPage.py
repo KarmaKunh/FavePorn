@@ -288,7 +288,7 @@ def get_url( url):
             'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-language' : 'it-IT,it;q=0.9',
             'connection' : 'keep-alive',
-            'cookie' : 'ua=3316012ff19a157bc3b9bafd92915ed7; platform=mobile; bs=t6uvw6jmmp0kg0nsgxmm2otwq40c6bp4; ss=428179870315510892; fg_fcf2e67d6468e8e1072596aead761f2b=65367.100000; atatusScript=hide; _ga=GA1.2.954014431.1643759895; _gid=GA1.2.28735198.1643759895; d_fs=1; local_storage=1; views=6; d_uidb=48323292-0f40-a01a-0a00-4aedd1625981; d_uid=48323292-0f40-a01a-0a00-4aedd1625981',
+            'cookie' : 'ua=a6eab1091b006a0183e6075e8409d85e; platform=mobile; bs=b84mr41zeskl8hponehunmw5xgf0v1gd; ss=777887794902658992; fg_fcf2e67d6468e8e1072596aead761f2b=68583.100000; atatusScript=hide; cookiesBannerSeen=1; _ga=GA1.2.49094081.1657168124; _gid=GA1.2.101549980.1657168124; d_fs=1; d_uidb=c84c56c3-2ef3-a01d-0a57-e6659fbd4f7f; d_uid=c84c56c3-2ef3-a01d-0a57-e6659fbd4f7f; local_storage=1; entryOrigin=VidPg-premVid; etavt={"ph6298e7193f932":"1_14_NA_NA|0"}; views=6; tj_UUID=37da72a238674cb6bddd910b8a11b5b8; tj_UUID_v2=37da72a2-3867-4cb6-bddd-910b8a11b5b8',
             'host' : 'it.pornhub.com',
             'if-modified-since' : 'Wed, 24 Feb 2021 16:26:08 GMT',
             'if-none-match' : '"60367e20-2ab"',
