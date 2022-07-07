@@ -273,9 +273,9 @@ def get_url( url):
             'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-language' : 'it-IT,it;q=0.9',
             'connection' : 'keep-alive',
-            'cookie' : 'ua=3316012ff19a157bc3b9bafd92915ed7; platform=mobile; bs=t6uvw6jmmp0kg0nsgxmm2otwq40c6bp4; ss=428179870315510892; fg_fcf2e67d6468e8e1072596aead761f2b=65367.100000; atatusScript=hide; _ga=GA1.2.954014431.1643759895; _gid=GA1.2.28735198.1643759895; d_fs=1; local_storage=1; views=6; d_uidb=48323292-0f40-a01a-0a00-4aedd1625981; d_uid=48323292-0f40-a01a-0a00-4aedd1625981',
+            'cookie' : 'ua=d99eeb685e21a4d0dbed1f405355fc60; platform=mobile; bs=zx7b7r67ohe1og8dagvfl7kgbl8yndbm; ss=404389387206119256; fg_fcf2e67d6468e8e1072596aead761f2b=86652.100000; atatusScript=hide; cookiesBannerSeen=1; _ga=GA1.2.1246880286.1657158124; _gid=GA1.2.340007907.1657158124; d_fs=1; d_uidb=41f144cd-c979-a031-0af0-63f62074721c; d_uid=41f144cd-c979-a031-0af0-63f62074721c; local_storage=1; entryOrigin=VidPg-premVid; etavt={"ph629bc32f0637b":"1_14_NA_NA|0"}; views=6; tj_UUID=90694b151dfd4db4887884a073630dfa; tj_UUID_v2=90694b15-1dfd-4db4-8878-84a073630dfa',
             'host' : 'it.pornhub.com',
-            'if-modified-since' : 'Wed, 24 Feb 2021 16:26:08 GMT',
+            'if-modified-since' : 'Sat, 04 Jun 2022 21:24:13 GMT',
             'if-none-match' : '"60367e20-2ab"',
             #'sec-ch-ua' : ' Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97',
             'sec-ch-ua-mobile' : '?1',
@@ -285,7 +285,7 @@ def get_url( url):
             'sec-fetch-site' : 'none',
             'sec-fetch-user' : '?1',
             'upgrade-insecure-requests' : '1',
-            'user-agent' : 'Mozilla/5.0 (Linux; Android 9; LLD-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36'
+            'user-agent' : 'Mozilla/5.0 (Linux; Android 9; LLD-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36'
 
         }
 
