@@ -81,13 +81,13 @@ def getVideo( url):
         #    #page= get_url('https://it.pornhub.com/video/get_media?s=eyJrIjoi'+result[0])
 
         if( checkLink== "http"):
-                page= get_url( url)
+                page= get_url_vid( url)
                 result= re.findall(r'"videoUrl":"https:.*get_media\?s=eyJrIjoi(.*)=p","quality"', page)
-                page= get_url('https://it.pornhub.com/video/get_media?s=eyJrIjoi'+result[0]+'=p')
+                page= get_url_vid('https://it.pornhub.com/video/get_media?s=eyJrIjoi'+result[0]+'=p')
         else:
-                page= get_url( "https://it.pornhub.com"+ url)
+                page= get_url_vid( "https://it.pornhub.com"+ url)
                 result= re.findall(r'"videoUrl":"https:.*get_media\?s=eyJrIjoi(.*)=p","quality"', page)
-                page= get_url('https://it.pornhub.com/video/get_media?s=eyJrIjoi'+result[0]+'=p')
+                page= get_url_vid('https://it.pornhub.com/video/get_media?s=eyJrIjoi'+result[0]+'=p')
                 
     
         print( "Donwloading page")
@@ -215,7 +215,29 @@ def getCategoryPic( name):
 
 
 
-
+def get_url_vid( url):
+        
+    headers= {
+                'accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+                'accept-encoding' : 'gzip, deflate, br',
+                'accept-language' : 'it-IT,it;q=0.9',
+                'connection' : 'keep-alive',
+                'host' : 'em.phncdn.com',
+                'if-modified-since' : 'Sat, 04 Jun 2022 21:24:13 GMT',
+                'range' : 'bytes=0-6529755',
+                'sec-ch-ua' : '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"',
+                'sec-ch-ua-mobile' : '?1',
+                'sec-ch-ua-platform' : '"Android"',
+                'sec-fetch-dest' : 'document',
+                'sec-fetch-mode' : 'navigate',
+                'sec-fetch-site' : 'none',
+                'sec-fetch-user' : '?1',
+                'upgrade-insecure-requests' : '1',
+                'user-agent' : 'Mozilla/5.0 (Linux; Android 9; LLD-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36',
+        }
+    r = requests.get(url)
+    #print( "result="+r.text)
+    return r.text
 
 
 def get_url_desktop( url):
@@ -289,22 +311,18 @@ def get_url( url):
 
         #}
         headers= {
-                'accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-                'accept-encoding' : 'gzip, deflate, br',
-                'accept-language' : 'it-IT,it;q=0.9',
-                'connection' : 'keep-alive',
-                'host' : 'em.phncdn.com',
-                'if-modified-since' : 'Sat, 04 Jun 2022 21:24:13 GMT',
-                'range' : 'bytes=0-6529755',
-                'sec-ch-ua' : '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"',
-                'sec-ch-ua-mobile' : '?1',
-                'sec-ch-ua-platform' : '"Android"',
-                'sec-fetch-dest' : 'document',
-                'sec-fetch-mode' : 'navigate',
-                'sec-fetch-site' : 'none',
-                'sec-fetch-user' : '?1',
-                'upgrade-insecure-requests' : '1',
-                'user-agent' : 'Mozilla/5.0 (Linux; Android 9; LLD-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36',
+            'Accept' : '*/*',
+            'accept-language' : 'it-IT,it;q=0.9,en-IT;q=0.8,en;q=0.7,en-US;q=0.6',
+            'cache-control' : 'max-age=0',
+            'connection' : 'keep-alive',
+            'host' : 'it.pornhub.com',
+            'if-modified-since' : 'Wed, 24 Feb 2021 16:26:08 GMT',
+            'if-none-match' : '"60367e20-2ab"',
+            'sec-fetch-mode' : 'same-origin',
+            'sec-fetch-site' : 'same-origin',
+            'service-worker' : 'script',
+            'user-agent' : 'Mozilla/5.0 (Linux; Android 9; LLD-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36'
+
         }
 
         # req = urllib.request.Request( url)
