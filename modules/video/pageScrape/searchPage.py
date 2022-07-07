@@ -304,7 +304,7 @@ def get_url( url):
                 'sec-ch-ua-platform' : '"Android"',
                 'sec-fetch-dest' : 'document',
                 'sec-fetch-mode' : 'navigate',
-                'sec-fetch-site' : 'cross-site,'
+                'sec-fetch-site' : 'cross-site',
                 'sec-fetch-user' : '?1',
                 'upgrade-insecure-requests' : '1',
                 'user-agent' : 'Mozilla/5.0 (Linux; Android 9; LLD-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36'
