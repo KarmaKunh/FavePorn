@@ -83,11 +83,11 @@ def getVideo( url):
         if( checkLink== "http"):
                 page= get_url( url)
                 result= re.findall(r'"videoUrl":"https:.*get_media\?s=eyJrIjoi(.*)=p","quality"', page)
-                page= get_the_f_url('https://it.pornhub.com/video/get_media?s=eyJrIjoi'+result[0]+'=p')
+                page= get_url('https://it.pornhub.com/video/get_media?s=eyJrIjoi'+result[0]+'=p')
         else:
                 page= get_url( "https://it.pornhub.com"+ url)
                 result= re.findall(r'"videoUrl":"https:.*get_media\?s=eyJrIjoi(.*)=p","quality"', page)
-                page= get_the_f_url('https://it.pornhub.com/video/get_media?s=eyJrIjoi'+result[0]+'=p')
+                page= get_url('https://it.pornhub.com/video/get_media?s=eyJrIjoi'+result[0]+'=p')
                 
     
         print( "Donwloading page")
