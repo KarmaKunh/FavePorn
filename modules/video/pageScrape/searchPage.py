@@ -290,6 +290,7 @@ def get_pics_url( url):
 def get_url( url):
 
         # timeout= 5
+        
 
         headers= {
             'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -310,6 +311,8 @@ def get_url( url):
             'user-agent' : 'Mozilla/5.0 (Linux; Android 9; LLD-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36'
 
         }
+
+
         # req = urllib.request.Request( url)
 
         # req.add_header( 'Accept', '*/*')
