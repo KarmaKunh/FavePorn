@@ -208,22 +208,21 @@ def getCategoryPic( name):
 def get_the_f_url( url):
         
     headers= {
-                'accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-                'accept-encoding' : 'gzip, deflate, br',
-                'accept-language' : 'it-IT,it;q=0.9',
-                'connection' : 'keep-alive',
-                'host' : 'em.phncdn.com',
-                'if-modified-since' : 'Sat, 04 Jun 2022 21:24:13 GMT',
-                'range' : 'bytes=0-6529755',
-                'sec-ch-ua' : '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"',
-                'sec-ch-ua-mobile' : '?1',
-                'sec-ch-ua-platform' : '"Android"',
-                'sec-fetch-dest' : 'document',
-                'sec-fetch-mode' : 'navigate',
-                'sec-fetch-site' : 'none',
-                'sec-fetch-user' : '?1',
-                'upgrade-insecure-requests' : '1',
-                'user-agent' : 'Mozilla/5.0 (Linux; Android 9; LLD-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36',
+            'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept-encoding' : 'gzip, deflate, br',
+            'accept-language' : 'it-IT,it;q=0.9',
+            'connection' : 'keep-alive',
+            'cookie' : 'ua=d99eeb685e21a4d0dbed1f405355fc60; platform=mobile; bs=56upk9stfqjyqo1nxc9jw53ogphawp0k; ss=151136400168700510; fg_fcf2e67d6468e8e1072596aead761f2b=13853.100000; atatusScript=hide; cookiesBannerSeen=1; _ga=GA1.2.1221798682.1657166705; _gid=GA1.2.349403146.1657166705; local_storage=1; d_fs=1; d_uidb=41f144cd-c979-a031-0af0-63f62074721c; d_uid=41f144cd-c979-a031-0af0-63f62074721c; entryOrigin=VidPg-premVid; etavt={"ph629bc32f0637b":"1_14_NA_NA|0"}; views=6; tj_UUID=90694b151dfd4db4887884a073630dfa; tj_UUID_v2=90694b15-1dfd-4db4-8878-84a073630dfa',
+            'host' : 'it.pornhub.com',
+            'sec-ch-ua' : '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"',
+            'sec-ch-ua-mobile' : '?1',
+            'sec-ch-ua-platform' : '"Android"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode' : 'navigate',
+            'sec-fetch-site' : 'none',
+            'sec-fetch-user' : '?1',
+            'upgrade-insecure-requests' : '1',
+            'user-agent' : 'Mozilla/5.0 (Linux; Android 9; LLD-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36'
         }
     r = requests.get(url, headers=headers)
     #print( "result="+r.text)
