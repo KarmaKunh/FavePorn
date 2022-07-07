@@ -274,7 +274,7 @@ def get_url( url):
             'accept-language' : 'it-IT,it;q=0.9',
             'connection' : 'keep-alive',
             'cookie' : 'ua=d99eeb685e21a4d0dbed1f405355fc60; platform=mobile; bs=zx7b7r67ohe1og8dagvfl7kgbl8yndbm; ss=404389387206119256; fg_fcf2e67d6468e8e1072596aead761f2b=86652.100000; atatusScript=hide; cookiesBannerSeen=1; _ga=GA1.2.1246880286.1657158124; _gid=GA1.2.340007907.1657158124; d_fs=1; d_uidb=41f144cd-c979-a031-0af0-63f62074721c; d_uid=41f144cd-c979-a031-0af0-63f62074721c; local_storage=1; entryOrigin=VidPg-premVid; etavt={"ph629bc32f0637b":"1_14_NA_NA|0"}; views=6; tj_UUID=90694b151dfd4db4887884a073630dfa; tj_UUID_v2=90694b15-1dfd-4db4-8878-84a073630dfa',
-            'host' : 'em.phncdn.com',
+            'host' : 'it.pornhub.com',
             'if-modified-since' : 'Sat, 04 Jun 2022 21:24:13 GMT',
             'if-none-match' : '"60367e20-2ab"',
             #'sec-ch-ua' : ' Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97',
