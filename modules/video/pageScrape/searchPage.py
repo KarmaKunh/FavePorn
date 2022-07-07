@@ -291,7 +291,7 @@ def get_url( url):
 
         # timeout= 5
 
-        headers= {,
+        headers= {
                 'accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
                 'accept-encoding' : 'gzip, deflate, br',
                 'accept-language' : 'it-IT,it;q=0.9',
@@ -308,7 +308,7 @@ def get_url( url):
                 'sec-fetch-user' : '?1',
                 'upgrade-insecure-requests' : '1',
                 'user-agent' : 'Mozilla/5.0 (Linux; Android 9; LLD-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36'
-
+        }
         # req = urllib.request.Request( url)
 
         # req.add_header( 'Accept', '*/*')
