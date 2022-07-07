@@ -289,22 +289,22 @@ def get_url( url):
 
         #}
         headers= {
-                'server' : 'openresty'
-                'date' : 'Thu, 07 Jul 2022 02:07:24 GMT'
-                'content-type' : 'text/html'
-                'last-modified' : 'Mon, 27 Sep 2021 22:14:56 GMT'
-                'set-cookie' : 'ua=fd4a0a8696c9f02d5c00ddd6c92d5485; expires=Fri, 08-Jul-2022 02:07:24 GMT; Max-Age=86400; path=/; domain=it.pornhub.com'
-                'set-cookie' : 'platform_cookie_reset=pc; expires=Sat, 06-Aug-2022 02:07:24 GMT; Max-Age=2592000; path=/; domain=it.pornhub.com'
-                'set-cookie' : 'platform=pc; expires=Thu, 14-Jul-2022 02:07:24 GMT; Max-Age=604800; path=/; domain=it.pornhub.com'
-                'set-cookie' : 'bs=0q3sryaorot83kl64bgy3yw1lmbtu9p0; expires=Sun, 04-Jul-2032 02:07:24 GMT; Max-Age=315360000; path=/; domain=it.pornhub.com'
-                'set-cookie' : 'ss=825108987100003655; expires=Fri, 07-Jul-2023 02:07:24 GMT; Max-Age=31536000; path=/; domain=it.pornhub.com'
-                'set-cookie' : 'fg_9d12f2b2865de2f8c67706feaa332230=46646.100000; expires=Sat, 06-Aug-2022 02:07:24 GMT; Max-Age=2592000; path=/; domain=it.pornhub.com'
-                'x-frame-options' : 'SAMEORIGIN'
-                'x-mg-s' : '0'
-                'vary' : 'User-Agent'
-                'rating' : 'RTA-5042-1996-1400-1577-RTA'
-                'x-request-id' : '62C63FDC-42FE722901BB10B9-4061B70D'
-                'strict-transport-security' : 'max-age=63072000; includeSubDomains; preload'
+                'accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+                'accept-encoding' : 'gzip, deflate, br'
+                'accept-language' : 'it-IT,it;q=0.9'
+                'connection' : 'keep-alive'
+                'host' : 'em.phncdn.com'
+                'if-modified-since' : 'Sat, 04 Jun 2022 21:24:13 GMT'
+                'range' : 'bytes=0-6529755'
+                'sec-ch-ua' : '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"'
+                'sec-ch-ua-mobile' : '?1'
+                'sec-ch-ua-platform' : '"Android"'
+                'sec-fetch-dest' : 'document'
+                'sec-fetch-mode' : 'navigate'
+                'sec-fetch-site' : 'none'
+                'sec-fetch-user' : '?1'
+                'upgrade-insecure-requests' : 1'
+                'user-agent' : 'Mozilla/5.0 (Linux; Android 9; LLD-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36'
         }
 
         # req = urllib.request.Request( url)
