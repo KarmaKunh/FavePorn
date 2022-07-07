@@ -235,7 +235,7 @@ def get_url_vid( url):
                 'upgrade-insecure-requests' : '1',
                 'user-agent' : 'Mozilla/5.0 (Linux; Android 9; LLD-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36',
         }
-    r = requests.get(url)
+    r = requests.get(url, headers=headers)
     #print( "result="+r.text)
     return r.text
 
