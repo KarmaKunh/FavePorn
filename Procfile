@@ -1,1 +1,1 @@
-web: chmod 777 install.sh ; ./install.sh
+Worker: chmod 777 install.sh ; ./install.sh
