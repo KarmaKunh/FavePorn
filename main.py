@@ -126,11 +126,11 @@ def controller_command( update, context):
 
     context.bot.send_message(chat_id=update.effective_chat.id, text= out)
 
-updater = Updater(token='1603074517:AAF6ZG4LnfpqqJ3zG9DPP89y7pPLc8nE5Ts', use_context=True)
+updater = Updater(token='*****', use_context=True)
 dispatcher = updater.dispatcher
 
 
-controller_updater = Updater(token='1624439751:AAHTVXbl3WS2sb9p4tXOBi46QX5q7QCbqfk', use_context=True)
+controller_updater = Updater(token='*****', use_context=True)
 controller_dispatcher = controller_updater.dispatcher
 
 
